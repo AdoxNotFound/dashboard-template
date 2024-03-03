@@ -26,9 +26,6 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
       style={{
         color: colors.grey[100],
         padding: "5px 35px 5px 20px",
-        "&:hover": {
-          color: "#868dfb",
-        },
       }}
       onClick={() => setSelected(title)}
       icon={icon}
@@ -48,16 +45,10 @@ const ProSidebar = () => {
   return (
     <Box
       sx={{
-        "& .pro-sidebar-inner": {
-          background: `${colors.primary[400]} !important`,
-        },
-        "& .pro-icon-wrapper": {
+        "& .ps-menu-button": {
           backgroundColor: "transparent !important",
         },
-        "& .pro-inner-item": {
-          padding: "5px 35px 5px 20px !important",
-        },
-        "& .pro-inner-item:hover": {
+        "& .ps-menu-button:hover": {
           color: "#868dfb !important",
         },
         "& .pro-menu-item.active": {
